@@ -184,6 +184,7 @@ id,sse,vr,status,name
 19373,0x140298190,0x1402a9890,4,void TESObjectREFR::Enable(bool a_resetInventory)
 19385,0x1402994f0,0x1402aabf0,3,BGSLocation* TESObjectREFR::GetCurrentLocation()
 19400,0x14029a330,0x1402aba40,3,bool TESObjectREFR::IsCrimeToActivate()
+19411,0x14029b190,0x1402ac8a0,4,TESObjectREFR::GetRelevantWaterHeight
 19446,0x14029cb80,0x1402ae290,3,"ShaderReferenceEffect* TESObjectREFR::InstantiateHitShader(TESEffectShader* a_shader, float a_dur, TESObjectREFR* a_facingRef, bool a_faceTarget, bool a_attachToCamera, NiAVObject* a_attachNode, bool a_interfaceEffect)"
 19666,0x1402a2070,0x1402b37e0,3,RE::ScriptEventSourceHolder::SendActivateEvent
 19789,0x1402a6670,0x1402b7de0,3,RE::TESObjectREFR::GetOwner
@@ -288,6 +289,7 @@ id,sse,vr,status,name
 29218,0x14044b9a0,0x14045b4f0,4,RE::TESObjectCELL::Spawn
 29219,0x14044bbf0,0x14045b740,4,RE::TESObjectCELL::PlaceParticleEffect
 29303,0x140452550,0x140462500,3,RE::NiAVObject::ClearWeaponBlood
+29819,0x140473120,0x140483100,3,Pathing::GetCharacterLocation
 30839,0x1404a8090,0x1404b80a0,3,void BGSDistantTreeBlock::UpdateBlockVisibility (BGSDistantTreeBlock * a_this)
 31140,0x1404b8580,0x1404c8660,3,SeasonsofSkyrim::LODSwap::Terrain::BuildMeshFileName
 31141,0x1404b85c0,0x1404c86a0,3,SeasonsofSkyrim::LODSwap::Terrain::BuildDiffuseTextureFileName
@@ -1019,6 +1021,8 @@ id,sse,vr,status,name
 82464,0x140f48360,0x140fa5060,3,void GSysAllocPaged::ShutdownHeapEngine()
 85757,0x140fffeb0,0x14105cbb0,4,void FUN_140fffeb0 (undefined8 * param_1)
 87907,0x1410a2370,0x1410fefa0,4,Skyrim-upscaler
+87983,0x1410a5ff0,0x141102c20,3,BSNavmeshLocationInfo::FindTriangleForLocation
+88005,0x1410a7e50,0x142fc4658,4,FindTriangleForLocationWaterFilter::FindTriangleForLocationWaterFilter
 88499,0x1410c3d40,0x141120aa0,3,RE::ActorState::Sub_1410C3D40
 97379,0x14122dad0,0x141265f80,3,RE::BSScript::ObjectBindPolicy::BindObject
 97462,0x141233670,0x14126bb20,3,void Object::Dtor()
@@ -8556,6 +8560,7 @@ id,sse,vr,status,name
 514706,0x142ec5bd8,0x142f8aaa8,3,RE::PlayerControls::Singleton
 514725,0x142ec5c60,0x142f8ab30,3,VATS* GetSingleton()
 514738,0x142ec5ce0,0x142f8abb0,3,BSMusicManager* GetSingleton()
+514893,0x142eff768,0x142fc4658,3,Pathing::st_instance
 514923,0x142eff868,0x142fc4758,4,RE::ActorState::UnarmedWeap
 514959,0x142eff988,0x142fc4878,3,MenuTopicManager* GetSingleton()
 514966,0x142eff9c0,0x142fc48b0,3,RE::NiRTTI_REFRSyncController
